@@ -1,7 +1,7 @@
 module CSP
   # How to deal with state machine creation without macro?
   # We can write a few small extensions for different Ruby implementations.
-  class THreadParker
+  class ThreadParker
     def initialize(pool)
       @pool = poll
     end
