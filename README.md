@@ -1,8 +1,35 @@
-# ruby-csp
-Communicating sequential process library and extension for Ruby.
+# Ruby::Csp
 
-Current problem I'm trying to solve is a decision about a parking place. If we use MRI threads we should handle GIL and park coroutines with one active thread(no idea how to do it). We might target Jruby and implement coroutines with it in mind. Last idea I have is to wait for Guilds and use them to create poll for coroutines.
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruby/csp`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-Eventmachine is also a nice solution (ClojureScript use only one thread for core.async, but Eventmachine is not a maintsream runtime dependencie, which makes this approach fragile). Also it might be fruitfull to follow Crystal approach and to use libevent/libev/libuv wrapped with main fiber, aka reactor, and spawn task in another fibers(nice for IO). Libev has Nio4R wrapper which is nice(Ruby wrapper -> JRuby compatibility, MRI aware, clean interface). This might be the way to go.
+TODO: Delete this and the text above, and describe your gem
 
-There is nice neverblock library(very old). We can steel some concepts from it.
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'ruby-csp'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install ruby-csp
+
+## Usage
+
+TODO: Write usage instructions here
+
+## Development
+
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ruby-csp.
