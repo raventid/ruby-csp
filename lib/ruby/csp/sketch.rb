@@ -19,7 +19,7 @@ module CSP
     end
   end
 
-  class GoBlock    
+  class GoBlock
     def run
       ThreadParker.park(yield)
     end
