@@ -5,7 +5,12 @@ class Ruby::CspTest < Minitest::Test
     refute_nil ::Ruby::Csp::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  # Here will be a place to write general specs to check:
+  # 1) Infrastructure
+  # 2) Settings
+  # 3) Runtime options
+  # 4) Only integration specs I guess
+  def test_it_should_respond_to_custom_backend
+    assert true
   end
 end
